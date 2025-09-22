@@ -1,0 +1,207 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="icon" type="image/jpg" href="pinku.jpg" >
+  <link rel="stylesheet" href="style.css" />
+<!-- <style>
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+.hero {
+  padding: 2rem;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+section {
+  padding: 2rem;
+}
+
+.project {
+  background: #eee;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Responsive styles */
+@media (max-width: 400px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+}
+
+
+</style> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+
+</head>
+
+<body>
+
+  <header>
+    <h1>Pinku Kumar</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">MY Jobs</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="pinku.jpg" alt="my image">
+    <a href="https://wa.me/9458600813?text=Hello%20there! " target="_blank"> <button> <i class="fa-brands fa-whatsapp"></i>Chat Now </button></a>
+    <h2>Hi, I'm Pinku Kumar</h2>
+    <p>I am a Mechanical Engineer as well as an Enterprenuer</p>
+    <a href="https://drive.google.com/file/d/1vafiR7JdXUtjM1o-3LBx046wzIClSOMT/view?usp=drivesdk" target="_blank" ><button style="left:20px; margin-bottom:200px;" id="button1"><i class="fa-solid fa-paperclip"> </i> CV </button></a> 
+
+   
+  </section>
+
+  <section id="about">
+    <h3>About Me</h3>
+    <p>
+      I Am Pinku Kumar
+      <br>
+      i completed by Engineering from the <a href="https://www.aktu.ac.in">AKTU</a> University
+      <br>
+
+      currently i worked as Senior Engineer in <a href="https://www.gargasso.com">Garg Assosiates Private Limited</a> in the Maintenence as well as the Production Field.
+
+<details>
+  <!-- <canvas id="pdf-canvas"></canvas> -->
+  <iframe src="Pinku CV_28-08-2025.pdf" width="90%" height="500px">
+    This browser does not support PDFs. Please download the PDF to view it: 
+
+</iframe>
+
+  <SUMMary>Show CV</SUMMary>
+</details>
+
+
+      
+       
+
+
+  </section>
+
+  <section id="projects">
+    <h3>Job Title</h3>
+    <div class="project">
+      <h4>Garg Assosiates Privates limited</h4>
+      <p>working From 2022 to till.</p>
+    </div>
+    <div class="project">
+      <h4>Sukriti Udyog Pvt Ltd</h4>
+      <p>2020 -2022</p>
+      <p>worked as quality and production Engineer</p>
+    </div>
+    <div class="project">
+      <h4>Kutail Engineering Pvt Ltd</h4>
+      <p>2019-2020</p>
+      <p>worked as production Engineer</p>
+    </div>
+  </section>
+
+  <section id="contact" >
+    <h3>Contact</h3>
+    <p style="display:block;" >Email me at: <a href="mailto:myselfpinkukumar96@email.com" style="text-decoration: none;" >myselfpinkukumar96@email.com</a></p>
+    <p style="display:block;">  Call me at:<a href="callto:9560910813" style="text-decoration: none;">+91 9458600813</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Pinku <i class="fa-solid fa-star"></i> Made with &hearts; by PK</p>
+    <p>connect with me on</p>
+    <a href="https://wa.me/9458600813?text=Hello%20there!" target="_blank">
+
+<i class="fa-brands fa-fade fa-square-whatsapp fa-2xl" style="color: #06f436;"></i></i></a>
+     <a href="https://facebook.com/iampinkukumar" target="_blank"><i class="fa-brands fa-fade fa-square-facebook fa-2xl" style="color: #005eff;"></i></a>
+     <a href="https://www.instagram.com/amit.k74" target="_blank"><i class="fa-brands fa-square-instagram fa-fade fa-2xl" style="color: #ff00ea;"></i></a>
+     <a href="https://x.com" target="_blank"><i class="fab fa-square-x-twitter fa-fade fa-2xl" style="color: #00040a;"></i></a>
+     <p id="time"></p>
+    
+  </footer>
+<script>
+  
+
+  setInterval(()=>{
+    const time1=Date();
+  const now = time1.toLocaleString();
+document.getElementById('time').innerHTML = '[' + now + ']';
+  },1000)
+  
+
+
+  
+  
+  const url = 'pinkuresume.pdf';
+
+  const loadingTask = pdfjsLib.getDocument(url);
+  loadingTask.promise.then(pdf => {
+    pdf.getPage(1).then(page => {
+      const scale = 1.5;
+      const viewport = page.getViewport({ scale });
+
+      const canvas = document.getElementById('pdf-canvas');
+      const context = canvas.getContext('2d');
+      canvas.height = viewport.height;
+      canvas.width = viewport.width;
+
+      const renderContext = {
+        canvasContext: context,
+        viewport: viewport
+      };
+      page.render(renderContext);
+    });
+  });
+
+
+
+
+   
+</script>
+</body>
+</html>
